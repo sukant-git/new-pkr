@@ -1,0 +1,28 @@
+SYSTEM RULES FOR UI GENERATION
+--------------------------------
+
+1) Structure (hierarchical)
+   - Departments
+       → Regulations (only 2019–2023, 2023–2027)
+           → Classes
+               → Sections
+                   → Students
+
+2) Navigation
+   - All layers must show a "View" button.
+   - Clicking View loads the next level via AJAX (no page reload).
+   - Data dynamically replaces content on the current page.
+
+3) Data
+   - No backend.
+   - Generate seeded sample data.
+   - Students must be unique per (Department + Regulation + Section).
+
+<!-- 4) Requirements
+   - Remove “programmes” completely from UI.
+   - Add note in a CHANGELOG entry that "programmes" is temporarily removed.
+   - Fix routing so navigation never goes blank.
+   - Use correct route parameters + JSON responses for each level. -->
+
+
+END RULES
