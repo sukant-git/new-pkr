@@ -65,25 +65,25 @@ export default function PO() {
     <div className="space-y-8">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-bold text-gray-800">Program Outcome</h2>
-        {/* <button className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+        {/* <button className="px-6 py-2 bg-gray-700 text-white font-semibold hover:bg-gray-800 border-2 border-gray-800">
           Add PO
         </button> */}
       </div>
-      <div className="bg-white rounded-lg p-8 shadow-sm">
-        <table className="w-full text-left">
+      <div className="bg-white border-2 border-gray-800 p-8">
+        <table className="w-full text-left border-collapse border-2 border-gray-800">
           <thead>
             <tr className="bg-gray-100">
-              <th className="p-4 font-semibold">PO</th>
-              <th className="p-4 font-semibold">Title</th>
-              <th className="p-4 font-semibold">Description</th>
+              <th className="p-4 font-semibold border border-gray-400">PO</th>
+              <th className="p-4 font-semibold border border-gray-400">Title</th>
+              <th className="p-4 font-semibold border border-gray-400">Description</th>
             </tr>
           </thead>
           <tbody>
             {poData.map((po, index) => (
-              <tr key={index} className="border-b">
-                <td className="p-4">{po.name}</td>
-                <td className="p-4">{po.title}</td>
-                <td className="p-4">{po.description}</td>
+              <tr key={index} className="border-b border-gray-400">
+                <td className="p-4 border border-gray-400">{po.name}</td>
+                <td className="p-4 border border-gray-400">{po.title}</td>
+                <td className="p-4 border border-gray-400">{po.description}</td>
               </tr>
             ))}
           </tbody>

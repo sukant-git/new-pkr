@@ -84,31 +84,31 @@ export default function QuestionPatterns() {
     <div className="space-y-8">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-bold text-gray-800">Question Patterns</h2>
-        <button className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+        <button className="px-6 py-2 bg-gray-700 text-white font-semibold hover:bg-gray-800 border-2 border-gray-800">
           Add Question Pattern
         </button>
       </div>
-      <div className="bg-white rounded-lg p-8 shadow-sm">
-        <table className="w-full text-left">
+      <div className="bg-white border-2 border-gray-800 p-8">
+        <table className="w-full text-left border-collapse border-2 border-gray-800">
           <thead>
             <tr className="bg-gray-100">
-              <th className="p-4 font-semibold">Exam</th>
-              <th className="p-4 font-semibold">Batch</th>
-              <th className="p-4 font-semibold">Pattern</th>
-              <th className="p-4 font-semibold">CO Distribution</th>
+              <th className="p-4 font-semibold border border-gray-400">Exam</th>
+              <th className="p-4 font-semibold border border-gray-400">Batch</th>
+              <th className="p-4 font-semibold border border-gray-400">Pattern</th>
+              <th className="p-4 font-semibold border border-gray-400">CO Distribution</th>
             </tr>
           </thead>
           <tbody>
             {questionPatternsData.map((item, index) => (
-              <tr key={index} className="border-b">
-                <td className="p-4">{item.exam}</td>
-                <td className="p-4">{item.batch}</td>
-                <td className="p-4">
+              <tr key={index} className="border-b border-gray-400">
+                <td className="p-4 border border-gray-400">{item.exam}</td>
+                <td className="p-4 border border-gray-400">{item.batch}</td>
+                <td className="p-4 border border-gray-400">
                   {item.pattern.map((line, i) => (
                     <div key={i}>{line}</div>
                   ))}
                 </td>
-                <td className="p-4">
+                <td className="p-4 border border-gray-400">
                   {item.coDistribution.map((line, i) => (
                     <div key={i}>{line}</div>
                   ))}

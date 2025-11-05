@@ -14,7 +14,7 @@ export default function Batches() {
     { years: "2021 - 2025", regulation: "R-2019", students: 128 },
     { years: "2022 - 2026", regulation: "R-2019", students: 63 },
     { years: "2023 - 2027", regulation: "R-2023", students: 128 },
-    { years: "2024 - 2028", regulation: "R-2023", students: 0 },
+    { years: "2024 - 2.028", regulation: "R-2023", students: 0 },
   ];
 
   if (selectedBatch) {

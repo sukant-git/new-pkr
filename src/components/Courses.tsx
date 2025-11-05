@@ -26,9 +26,9 @@ export default function Courses() {
             </select>
           </div>
           <div className="flex space-x-4">
-            <button className="px-4 py-2 bg-gray-200 border-2 border-gray-400 hover:bg-gray-300">Search</button>
-            <button className="px-4 py-2 bg-gray-200 border-2 border-gray-400 hover:bg-gray-300">Filter</button>
-            <button className="px-4 py-2 bg-gray-200 border-2 border-gray-400 hover:bg-gray-300">Reset</button>
+            <button className="px-4 py-2 bg-gray-700 text-white font-semibold hover:bg-gray-800 border-2 border-gray-800">Search</button>
+            <button className="px-4 py-2 bg-gray-700 text-white font-semibold hover:bg-gray-800 border-2 border-gray-800">Filter</button>
+            <button className="px-4 py-2 bg-gray-700 text-white font-semibold hover:bg-gray-800 border-2 border-gray-800">Reset</button>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ export default function Courses() {
                 <td className="p-4 border border-gray-400">{course.title}</td>
                 <td className="p-4 border border-gray-400">{course.programme}</td>
                 <td className="p-4 border border-gray-400">
-                  <button className="text-blue-600 hover:underline">View</button>
+                  <button className="px-4 py-2 bg-gray-700 text-white font-semibold hover:bg-gray-800 border-2 border-gray-800">View</button>
                 </td>
               </tr>
             ))}

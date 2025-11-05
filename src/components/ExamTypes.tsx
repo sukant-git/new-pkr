@@ -10,27 +10,27 @@ export default function ExamTypes() {
     <div className="space-y-8">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-bold text-gray-800">Exam Types</h2>
-        <button className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+        <button className="px-6 py-2 bg-gray-700 text-white font-semibold hover:bg-gray-800 border-2 border-gray-800">
           Add Exam Type
         </button>
       </div>
-      <div className="bg-white rounded-lg p-8 shadow-sm">
-        <table className="w-full text-left">
+      <div className="bg-white border-2 border-gray-800 p-8">
+        <table className="w-full text-left border-collapse border-2 border-gray-800">
           <thead>
             <tr className="bg-gray-100">
-              <th className="p-4 font-semibold">Type</th>
-              <th className="p-4 font-semibold">Name</th>
-              <th className="p-4 font-semibold">Total Marks</th>
-              <th className="p-4 font-semibold">Duration</th>
+              <th className="p-4 font-semibold border border-gray-400">Type</th>
+              <th className="p-4 font-semibold border border-gray-400">Name</th>
+              <th className="p-4 font-semibold border border-gray-400">Total Marks</th>
+              <th className="p-4 font-semibold border border-gray-400">Duration</th>
             </tr>
           </thead>
           <tbody>
             {examTypesData.map((exam, index) => (
-              <tr key={index} className="border-b">
-                <td className="p-4">{exam.type}</td>
-                <td className="p-4">{exam.name}</td>
-                <td className="p-4">{exam.totalMarks}</td>
-                <td className="p-4">{exam.duration}</td>
+              <tr key={index} className="border-b border-gray-400">
+                <td className="p-4 border border-gray-400">{exam.type}</td>
+                <td className="p-4 border border-gray-400">{exam.name}</td>
+                <td className="p-4 border border-gray-400">{exam.totalMarks}</td>
+                <td className="p-4 border border-gray-400">{exam.duration}</td>
               </tr>
             ))}
           </tbody>

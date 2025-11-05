@@ -22,13 +22,13 @@ export default function Header({ user, onLogout, currentPage, setCurrentPage }: 
         </div>
 
         <nav className="flex items-center gap-8">
-          <button onClick={() => setCurrentPage('home')} className={`font-medium transition ${currentPage === 'home' ? 'text-gray-900 border-b-2 border-gray-900 pb-1' : 'text-gray-600 hover:text-gray-800'}`}>
+          <button onClick={() => setCurrentPage('home')} className={`font-semibold transition ${currentPage === 'home' ? 'text-gray-900 border-b-2 border-gray-900 pb-1' : 'text-gray-600 hover:text-gray-800'}`}>
             Home
           </button>
-          <button onClick={() => setCurrentPage('exam')} className={`font-medium transition ${currentPage === 'exam' ? 'text-gray-900 border-b-2 border-gray-900 pb-1' : 'text-gray-600 hover:text-gray-800'}`}>
+          <button onClick={() => setCurrentPage('exam')} className={`font-semibold transition ${currentPage === 'exam' ? 'text-gray-900 border-b-2 border-gray-900 pb-1' : 'text-gray-600 hover:text-gray-800'}`}>
             Exam
           </button>
-          <button onClick={() => setCurrentPage('attainment')} className={`font-medium transition ${currentPage === 'attainment' ? 'text-gray-900 border-b-2 border-gray-900 pb-1' : 'text-gray-600 hover:text-gray-800'}`}>
+          <button onClick={() => setCurrentPage('attainment')} className={`font-semibold transition ${currentPage === 'attainment' ? 'text-gray-900 border-b-2 border-gray-900 pb-1' : 'text-gray-600 hover:text-gray-800'}`}>
             Attainment
           </button>
 

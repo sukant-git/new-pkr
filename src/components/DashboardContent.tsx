@@ -22,7 +22,7 @@ export default function DashboardContent({ user, currentPage }: DashboardContent
                 19ECY07 - SENSORS FOR ENGINEERING APPLICATIONS
               </h4>
               <p className="text-gray-600 mb-4">2022 - 2026</p>
-              <button className="text-blue-600 hover:underline font-medium">
+              <button className="px-4 py-2 bg-gray-700 text-white font-semibold hover:bg-gray-800 border-2 border-gray-800">
                 View Course
               </button>
             </div>
@@ -73,7 +73,7 @@ export default function DashboardContent({ user, currentPage }: DashboardContent
                 19ECY07 - SENSORS FOR ENGINEERING APPLICATIONS
               </h4>
               <p className="text-gray-600 mb-4">2022 - 2026</p>
-              <button className="text-blue-600 hover:underline font-medium">
+              <button className="px-4 py-2 bg-gray-700 text-white font-semibold hover:bg-gray-800 border-2 border-gray-800">
                 View Course
               </button>
             </div>

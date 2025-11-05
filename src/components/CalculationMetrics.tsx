@@ -22,7 +22,7 @@ export default function CalculationMetrics() {
         </button> */}
       </div>
 
-      <div className="bg-white rounded-lg p-8 shadow-sm">
+      <div className="bg-white border-2 border-gray-800 p-8">
         <h3 className="text-xl font-bold text-gray-800 mb-4">CO Percentage Ratio</h3>
         <div className="flex space-x-8">
           <div>
@@ -36,77 +36,77 @@ export default function CalculationMetrics() {
         </div>
       </div>
 
-      <div className="bg-white rounded-lg p-8 shadow-sm">
+      <div className="bg-white border-2 border-gray-800 p-8">
         <h3 className="text-xl font-bold text-gray-800 mb-4">Attainment Levels</h3>
-        <table className="w-full text-left">
+        <table className="w-full text-left border-collapse border-2 border-gray-800">
           <thead>
             <tr className="bg-gray-100">
-              <th className="p-4 font-semibold">Level</th>
-              <th className="p-4 font-semibold">Min Percentage</th>
-              <th className="p-4 font-semibold">Max Percentage</th>
+              <th className="p-4 font-semibold border border-gray-400">Level</th>
+              <th className="p-4 font-semibold border border-gray-400">Min Percentage</th>
+              <th className="p-4 font-semibold border border-gray-400">Max Percentage</th>
             </tr>
           </thead>
           <tbody>
             {attainmentLevels.map((level, index) => (
-              <tr key={index} className="border-b">
-                <td className="p-4">{level.level}</td>
-                <td className="p-4">{level.min}%</td>
-                <td className="p-4">{level.max}%</td>
+              <tr key={index} className="border-b border-gray-400">
+                <td className="p-4 border border-gray-400">{level.level}</td>
+                <td className="p-4 border border-gray-400">{level.min}%</td>
+                <td className="p-4 border border-gray-400">{level.max}%</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      <div className="bg-white rounded-lg p-8 shadow-sm">
+      <div className="bg-white border-2 border-gray-800 p-8">
         <h3 className="text-xl font-bold text-gray-800 mb-4">Weightage Tools</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h4 className="font-bold mb-2">Direct</h4>
-            <table className="w-full text-left">
+            <table className="w-full text-left border-collapse border-2 border-gray-800">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="p-4 font-semibold">Component</th>
-                  <th className="p-4 font-semibold">Percentage</th>
+                  <th className="p-4 font-semibold border border-gray-400">Component</th>
+                  <th className="p-4 font-semibold border border-gray-400">Percentage</th>
                 </tr>
               </thead>
               <tbody>
                 {weightageTools.direct.map((tool, index) => (
-                  <tr key={index} className="border-b">
-                    <td className="p-4">{tool.component}</td>
-                    <td className="p-4">{tool.percentage}%</td>
+                  <tr key={index} className="border-b border-gray-400">
+                    <td className="p-4 border border-gray-400">{tool.component}</td>
+                    <td className="p-4 border border-gray-400">{tool.percentage}%</td>
                   </tr>
                 ))}
               </tbody>
               <tfoot>
                 <tr className="font-bold">
-                  <td className="p-4">Total Percentage</td>
-                  <td className="p-4">100%</td>
+                  <td className="p-4 border border-gray-400">Total Percentage</td>
+                  <td className="p-4 border border-gray-400">100%</td>
                 </tr>
               </tfoot>
             </table>
           </div>
           <div>
             <h4 className="font-bold mb-2">Indirect</h4>
-            <table className="w-full text-left">
+            <table className="w-full text-left border-collapse border-2 border-gray-800">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="p-4 font-semibold">Component</th>
-                  <th className="p-4 font-semibold">Percentage</th>
+                  <th className="p-4 font-semibold border border-gray-400">Component</th>
+                  <th className="p-4 font-semibold border border-gray-400">Percentage</th>
                 </tr>
               </thead>
               <tbody>
                 {weightageTools.indirect.map((tool, index) => (
-                  <tr key={index} className="border-b">
-                    <td className="p-4">{tool.component}</td>
-                    <td className="p-4">{tool.percentage}%</td>
+                  <tr key={index} className="border-b border-gray-400">
+                    <td className="p-4 border border-gray-400">{tool.component}</td>
+                    <td className="p-4 border border-gray-400">{tool.percentage}%</td>
                   </tr>
                 ))}
               </tbody>
               <tfoot>
                 <tr className="font-bold">
-                  <td className="p-4">Total Percentage</td>
-                  <td className="p-4">100%</td>
+                  <td className="p-4 border border-gray-400">Total Percentage</td>
+                  <td className="p-4 border border-gray-400">100%</td>
                 </tr>
               </tfoot>
             </table>
