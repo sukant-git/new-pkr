@@ -47,18 +47,18 @@ export default function Sidebar({ role, currentPage }: SidebarProps) {
   }
 
   return (
-    <aside className="w-64  bg-white border-r  border-neutral-200 min-h-[calc(100vh-73px)]">
+    <aside className="w-64 bg-white border-r-2 border-gray-800 min-h-[calc(100vh-73px)]">
       <div className="p-6">
-        <h2 className="text-primary font-semibold text-lg mb-6">Dashboard</h2>
+        <h2 className="text-gray-800 font-semibold text-lg mb-6">Dashboard</h2>
         <nav className="space-y-1">
           {menuItems.map((item) => (
             <Link
               key={item.id}
               to={item.path}
-              className={`block w-full text-left px-4 py-3 rounded-lg transition ${
+              className={`block w-full text-left px-4 py-3 transition ${
                 location.pathname === item.path
-                  ? 'bg-primary/10 text-primary font-medium border-l-4 border-primary'
-                  : 'text-neutral-700 hover:bg-neutral-100'
+                  ? 'bg-gray-200 text-gray-800 font-medium border-l-4 border-gray-800'
+                  : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
               {item.label}

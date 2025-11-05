@@ -16,26 +16,26 @@ export default function StudentMarks() {
     <div className="space-y-8">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-bold text-gray-800">Student Marks for {className} - Section {sectionName}</h2>
-        <button onClick={() => navigate(-1)} className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+        <button onClick={() => navigate(-1)} className="px-6 py-2 bg-gray-700 text-white font-semibold hover:bg-gray-800 border-2 border-gray-800">
           Back
         </button>
       </div>
 
-      <div className="bg-white rounded-lg p-8 shadow-sm">
-        <table className="w-full text-left">
+      <div className="bg-white border-2 border-gray-800 p-8">
+        <table className="w-full text-left border-collapse border-2 border-gray-800">
           <thead>
             <tr className="bg-gray-100">
-              <th className="p-4 font-semibold">ID</th>
-              <th className="p-4 font-semibold">Name</th>
-              <th className="p-4 font-semibold">Email</th>
+              <th className="p-4 font-semibold border border-gray-400">ID</th>
+              <th className="p-4 font-semibold border border-gray-400">Name</th>
+              <th className="p-4 font-semibold border border-gray-400">Email</th>
             </tr>
           </thead>
           <tbody>
             {section.students.map((student) => (
-              <tr key={student.id} className="border-b">
-                <td className="p-4">{student.id}</td>
-                <td className="p-4">{student.name}</td>
-                <td className="p-4">{student.email}</td>
+              <tr key={student.id} className="border-b border-gray-400">
+                <td className="p-4 border border-gray-400">{student.id}</td>
+                <td className="p-4 border border-gray-400">{student.name}</td>
+                <td className="p-4 border border-gray-400">{student.email}</td>
               </tr>
             ))}
           </tbody>

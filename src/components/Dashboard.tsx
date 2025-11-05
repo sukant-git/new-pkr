@@ -32,11 +32,11 @@ export default function Dashboard({ user, onLogout }: DashboardProps) {
   const [currentPage, setCurrentPage] = useState('home');
 
   return (
-    <div className="min-h-screen bg-neutral-100">
+    <div className="min-h-screen bg-gray-200">
       <Header user={user} onLogout={onLogout} currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <div className="flex flex-row-reverse">
         <Sidebar role={user.role} currentPage={currentPage} />
-        <main className="flex-1 p-8 fade-in-up">
+        <main className="flex-1 p-8">
           <Routes>
             <Route path="/" element={<DashboardContent user={user} currentPage={currentPage} />} />
             <Route path="/departments" element={<Departments />} />
@@ -64,6 +64,6 @@ export default function Dashboard({ user, onLogout }: DashboardProps) {
           </Routes>
         </main>
       </div>
-    </div>
-  );
+    </div>
+  );
 }
