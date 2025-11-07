@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/Se3-Group-s-e1528365728866.jpg";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
-  const handleOpenExcel = () => {
-    window.open("/CO_ASS_144P80_QUELv230719_1_JOTHI.xlsx", "_blank");
+  const navigate = useNavigate();
+  const handleNavigateToDashboard = () => {
+    navigate("/new-pkr");
   };
 
   return (
@@ -13,18 +15,18 @@ const HeroSection = () => {
         <img 
           src={heroImage} 
           alt="Students working on computers at PKR Arts College" 
-          className="w-full h-full object-cover"
+          className="object-cover w-full h-full"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40"></div>
         
         {/* Hero Text */}
         <div className="absolute inset-0 flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <h2 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4 leading-tight font-serif">
+              <h2 className="mb-3 font-serif text-2xl font-bold leading-tight text-white sm:text-3xl md:text-5xl sm:mb-4">
                 Accredited by NAAC with 'A' Grade
               </h2>
-              <p className="text-white text-base sm:text-lg md:text-xl mb-4 sm:mb-6">
+              <p className="mb-4 text-base text-white sm:text-lg md:text-xl sm:mb-6">
                 Promoting knowledge and skills of learner
               </p>
             </div>
@@ -33,11 +35,11 @@ const HeroSection = () => {
       </div>
 
       {/* OBE Button */}
-      <div className="bg-gradient-to-r from-accent to-accent/90 py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+      <div className="py-4 bg-gradient-to-r from-accent to-accent/90">
+        <div className="flex justify-center px-4 max-w-7xl mx-a-uto sm:px-6 lg:px-8">
           <Button
-            onClick={handleOpenExcel}
-            className="bg-white text-primary hover:bg-white/90 font-semibold text-sm sm:text-base md:text-lg px-6 sm:px-8 py-4 sm:py-6 shadow-lg transform transition-all hover:scale-105"
+            onClick={handleNavigateToDashboard}
+            className="px-6 py-4 text-sm font-semibold transition-all transform bg-white shadow-lg text-primary hover:bg-white/90 sm:text-base md:text-lg sm:px-8 sm:py-6 hover:scale-105"
           >
             OBE CO/PO Course Attainment
           </Button>

@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import * as XLSX from "xlsx";
+// import * as XLSX from "xlsx";
+
+type ExcelData = (string | number)[][];
 
 const ExcelTab: React.FC = () => {
-  const [data, setData] = React.useState<any[][]>([]);
+  const [data, setData] = React.useState<ExcelData>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -18,7 +20,7 @@ const ExcelTab: React.FC = () => {
         const wsname = wb.SheetNames[0];
         const ws = wb.Sheets[wsname];
         const json = XLSX.utils.sheet_to_json(ws, { header: 1 });
-        setData(json as any[][]);
+        setData(json as ExcelData);
       }
     };
     reader.readAsBinaryString(file);
@@ -38,12 +40,12 @@ const ExcelTab: React.FC = () => {
       </Button>
       {data.length > 0 && (
         <div className="overflow-x-auto">
-          <table className="min-w-full border text-sm">
+          <table className="min-w-full text-sm border">
             <tbody>
               {data.map((row, i) => (
                 <tr key={i}>
                   {row.map((cell, j) => (
-                    <td key={j} className="border px-2 py-1">
+                    <td key={j} className="px-2 py-1 border">
                       {cell}
                     </td>
                   ))}
