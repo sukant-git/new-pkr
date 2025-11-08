@@ -12,7 +12,7 @@ export default function ClassDetails() {
   }
 
   const handleViewSection = (sectionName: string) => {
-    navigate(`/classes/${departmentName}/${regulationName}/${className}/${sectionName}/students`);
+    navigate(`/dashboard/classes/${departmentName}/${regulationName}/${className}/${sectionName}/students`);
   };
 
   return (

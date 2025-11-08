@@ -6,33 +6,33 @@ interface SidebarProps {
 }
 
 const facultyMenuItems = [
-  { id: 'home', label: 'Home', path: '/' },
-  { id: 'regulations', label: 'Regulations', path: '/regulations' },
-  { id: 'batches', label: 'Batches', path: '/batches' },
-  { id: 'departments', label: 'Departments', path: '/departments1' },
-  { id: 'classes', label: 'Classes', path: '/classes' },
-  { id: 'courses', label: 'Courses', path: '/courses' },
+  { id: 'home', label: 'Home', path: '/dashboard' },
+  { id: 'regulations', label: 'Regulations', path: '/dashboard/regulations' },
+  { id: 'batches', label: 'Batches', path: '/dashboard/batches' },
+  { id: 'departments', label: 'Departments', path: '/dashboard/departments1' },
+  { id: 'classes', label: 'Classes', path: '/dashboard/classes' },
+  { id: 'courses', label: 'Courses', path: '/dashboard/courses' },
 ];
 
 const examMenuItems = [
-  { id: 'home', label: 'Home', path: '/' },
-  { id: 'blooms-levels', label: 'Blooms Levels', path: '/blooms-levels' },
-  { id: 'activities', label: 'Activities', path: '/activities' },
-  { id: 'exam-types', label: 'Exam Types', path: '/exam-types' },
-  { id: 'question-patterns', label: 'Question Patterns', path: '/question-patterns' },
-  { id: 'questions', label: 'Questions', path: '/questions' },
-  { id: 'question-papers', label: 'Question Papers', path: '/question-papers' },
-  { id: 'student-marks', label: 'Student Marks', path: '/student-marks' },
-  { id: 'course-end-survey', label: 'Course End Survey', path: '/course-end-survey' },
+  { id: 'home', label: 'Home', path: '/dashboard' },
+  { id: 'blooms-levels', label: 'Blooms Levels', path: '/dashboard/blooms-levels' },
+  { id: 'activities', label: 'Activities', path: '/dashboard/activities' },
+  { id: 'exam-types', label: 'Exam Types', path: '/dashboard/exam-types' },
+  { id: 'question-patterns', label: 'Question Patterns', path: '/dashboard/question-patterns' },
+  { id: 'questions', label: 'Questions', path: '/dashboard/questions' },
+  { id: 'question-papers', label: 'Question Papers', path: '/dashboard/question-papers' },
+  { id: 'student-marks', label: 'Student Marks', path: '/dashboard/student-marks' },
+  { id: 'course-end-survey', label: 'Course End Survey', path: '/dashboard/course-end-survey' },
 ];
 
 const attainmentMenuItems = [
-  { id: 'home', label: 'Home', path: '/' },
-  { id: 'po', label: 'PO', path: '/po' },
-  { id: 'co', label: 'CO', path: '/co' },
-  { id: 'pso', label: 'PSO', path: '/pso' },
-  { id: 'calculation-metrics', label: 'Calculation Metrics', path: '/calculation-metrics' },
-  { id: 'attainment-calculation', label: 'Attainment Calculation', path: '/attainment-calculation' },
+  { id: 'home', label: 'Home', path: '/dashboard' },
+  { id: 'po', label: 'PO', path: '/dashboard/po' },
+  { id: 'co', label: 'CO', path: '/dashboard/co' },
+  { id: 'pso', label: 'PSO', path: '/dashboard/pso' },
+  { id: 'calculation-metrics', label: 'Calculation Metrics', path: '/dashboard/calculation-metrics' },
+  { id: 'attainment-calculation', label: 'Attainment Calculation', path: '/dashboard/attainment-calculation' },
 ];
 
 export default function Sidebar({ role, currentPage }: SidebarProps) {

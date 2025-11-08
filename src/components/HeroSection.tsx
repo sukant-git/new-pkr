@@ -5,12 +5,11 @@ import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
   const navigate = useNavigate();
   const handleNavigateToDashboard = () => {
-    navigate("/new-pkr");
+    navigate("/dashboard");
   };
 
   return (
     <section className="relative mt-[72px] md:mt-[138px]">
-      {/* Hero Image */}
       <div className="relative h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden">
         <img 
           src={heroImage} 
@@ -19,7 +18,6 @@ const HeroSection = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40"></div>
         
-        {/* Hero Text */}
         <div className="absolute inset-0 flex items-center">
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="max-w-3xl">
@@ -34,7 +32,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* OBE Button */}
       <div className="py-4 bg-gradient-to-r from-accent to-accent/90">
         <div className="flex justify-center px-4 max-w-7xl mx-a-uto sm:px-6 lg:px-8">
           <Button

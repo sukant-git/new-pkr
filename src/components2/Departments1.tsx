@@ -29,7 +29,7 @@ export default function Departments() {
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {selectedDepartment.regulations.map((regulation, index) => (
-            <Link key={index} to={`/classes/${selectedDepartment.name}/${regulation.name}`}>
+            <Link key={index} to={`/dashboard/classes/${selectedDepartment.name}/${regulation.name}`}>
               <div className="flex flex-col justify-between h-full p-8 bg-white border-2 border-gray-800">
                 <div>
                   <h3 className="text-lg font-bold text-gray-800">{regulation.name}</h3>

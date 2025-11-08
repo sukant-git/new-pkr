@@ -6,7 +6,7 @@ export default function Classes() {
   const navigate = useNavigate();
 
   const handleViewClass = (classItem: { name: string }) => {
-    navigate(`/classes/${departmentName}/${regulationName}/${classItem.name}`);
+    navigate(`/dashboard/classes/${departmentName}/${regulationName}/${classItem.name}`);
   };
 
   const filteredClasses = classesData.filter(classItem => 

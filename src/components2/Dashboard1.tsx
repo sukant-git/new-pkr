@@ -38,29 +38,29 @@ export default function Dashboard({ user, onLogout }: DashboardProps) {
         <Sidebar role={user.role} currentPage={currentPage} />
         <main className="flex-1 p-8">
           <Routes>
-            <Route path="/" element={<DashboardContent user={user} currentPage={currentPage} />} />
-            <Route path="/departments1" element={<Departments />} />
-            <Route path="/departments1/:departmentName/regulations" element={<Regulations />} />
-            <Route path="/regulations" element={<Regulations />} />
-            <Route path="/classes" element={<Classes />} />
-            <Route path="/classes/:departmentName/:regulationName" element={<Classes />} />
-            <Route path="/classes/:departmentName/:regulationName/:className" element={<ClassDetails />} />
-            <Route path="/classes/:departmentName/:regulationName/:className/:sectionName/students" element={<StudentMarks />} />
-            <Route path="/batches" element={<Batches />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/blooms-levels" element={<BloomsLevels />} />
-            <Route path="/activities" element={<Activities />} />
-            <Route path="/exam-types" element={<ExamTypes />} />
-            <Route path="/question-patterns" element={<QuestionPatterns />} />
-            <Route path="/questions" element={<Questions />} />
-            <Route path="/question-papers" element={<QuestionPapers />} />
-            <Route path="/student-marks" element={<StudentMarks />} />
-            <Route path="/course-end-survey" element={<CourseEndSurvey />} />
-            <Route path="/po" element={<PO />} />
-            <Route path="/co" element={<CO />} />
-            <Route path="/pso" element={<PSO />} />
-            <Route path="/calculation-metrics" element={<CalculationMetrics />} />
-            <Route path="/attainment-calculation" element={<AttainmentCalculation />} />
+            <Route index element={<DashboardContent user={user} currentPage={currentPage} />} />
+            <Route path="departments1" element={<Departments />} />
+            <Route path="departments1/:departmentName/regulations" element={<Regulations />} />
+            <Route path="regulations" element={<Regulations />} />
+            <Route path="classes" element={<Classes />} />
+            <Route path="classes/:departmentName/:regulationName" element={<Classes />} />
+            <Route path="classes/:departmentName/:regulationName/:className" element={<ClassDetails />} />
+            <Route path="classes/:departmentName/:regulationName/:className/:sectionName/students" element={<StudentMarks />} />
+            <Route path="batches" element={<Batches />} />
+            <Route path="courses" element={<Courses />} />
+            <Route path="blooms-levels" element={<BloomsLevels />} />
+            <Route path="activities" element={<Activities />} />
+            <Route path="exam-types" element={<ExamTypes />} />
+            <Route path="question-patterns" element={<QuestionPatterns />} />
+            <Route path="questions" element={<Questions />} />
+            <Route path="question-papers" element={<QuestionPapers />} />
+            <Route path="student-marks" element={<StudentMarks />} />
+            <Route path="course-end-survey" element={<CourseEndSurvey />} />
+            <Route path="po" element={<PO />} />
+            <Route path="co" element={<CO />} />
+            <Route path="pso" element={<PSO />} />
+            <Route path="calculation-metrics" element={<CalculationMetrics />} />
+            <Route path="attainment-calculation" element={<AttainmentCalculation />} />
           </Routes>
         </main>
       </div>

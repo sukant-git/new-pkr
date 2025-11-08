@@ -18,6 +18,7 @@ import Layout from "./components/Layout";
 import Login from "./components2/Login";
 import { useState } from "react";
 import Dashboard from './components2/Dashboard1';
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -42,21 +43,23 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<Navigate to="/Index" />} />
             <Route element={<Layout />}>
               <Route path="/Index" element={<Index />} />
-              <Route path="/about" element={<AboutPkr />} />
-              <Route path="/admissions" element={<Admissions />} />
-              <Route path="/departments" element={<Departments />} />
-              <Route path="/research" element={<Research />} />
-              <Route path="/campus-life" element={<CampusLife />} />
-              <Route path="/resources" element={<Resources />} />
-              <Route path="/alumni" element={<Alumni />} />
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/iqac" element={<Iqac />} />
+              <Route path="/About" element={<AboutPkr />} />
+              <Route path="/Admissions" element={<Admissions />} />
+              <Route path="/Departments" element={<Departments />} />
+              <Route path="/Research" element={<Research />} />
+              <Route path="/Campus-Life" element={<CampusLife />} />
+              <Route path="/Resources" element={<Resources />} />
+              <Route path="/Alumni" element={<Alumni />} />
+              <Route path="/Gallery" element={<Gallery />} />
+              <Route path="/Iqac" element={<Iqac />} />
             </Route>
               <Route path="/payment" element={<Payment />} />
-              <Route path="/login" element={isLoggedIn ? <Navigate to="/" /> : <Login onLogin={handleLogin} />} />
-              <Route path="/*" element={isLoggedIn ? <Dashboard user={user!} onLogout={handleLogout} /> : <Navigate to="/login" />} />
+              <Route path="/login" element={isLoggedIn ? <Navigate to="/dashboard" /> : <Login onLogin={handleLogin} />} />
+              <Route path="/dashboard/*" element={isLoggedIn ? <Dashboard user={user!} onLogout={handleLogout} /> : <Navigate to="/login" />} />
+              <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
