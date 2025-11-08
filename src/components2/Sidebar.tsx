@@ -9,7 +9,7 @@ const facultyMenuItems = [
   { id: 'home', label: 'Home', path: '/' },
   { id: 'regulations', label: 'Regulations', path: '/regulations' },
   { id: 'batches', label: 'Batches', path: '/batches' },
-  { id: 'departments', label: 'Departments', path: '/departments' },
+  { id: 'departments', label: 'Departments', path: '/departments1' },
   { id: 'classes', label: 'Classes', path: '/classes' },
   { id: 'courses', label: 'Courses', path: '/courses' },
 ];

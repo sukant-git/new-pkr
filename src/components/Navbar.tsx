@@ -9,7 +9,7 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const menuItems = [
-    { label: "Home", href: "/" },
+    { label: "Home", href: "/Index" },
     { 
       label: "About PKR", 
       href: "/about",

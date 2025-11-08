@@ -99,7 +99,7 @@ const Payment = () => {
             <Button 
               className="w-full" 
               variant="secondary"
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/Index")}
             >
               <Home className="mr-2 h-4 w-4" />
               Back to Home

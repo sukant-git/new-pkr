@@ -39,7 +39,7 @@ const HeroSection = () => {
         <div className="flex justify-center px-4 max-w-7xl mx-a-uto sm:px-6 lg:px-8">
           <Button
             onClick={handleNavigateToDashboard}
-            className="px-6 py-4 text-sm font-semibold transition-all transform bg-white shadow-lg text-primary hover:bg-white/90 sm:text-base md:text-lg sm:px-8 sm:py-6 hover:scale-105"
+            className="px-6 items-center py-4 text-sm font-semibold transition-all transform bg-white shadow-lg text-primary hover:bg-white/90 sm:text-base md:text-lg sm:px-8 sm:py-6 hover:scale-105 "
           >
             OBE CO/PO Course Attainment
           </Button>
